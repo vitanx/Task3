@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Document</title>
+    <script>
+        var submit = [{
+                id: '1',
+                name: 'Ноутбук Lenovo',
+                price: 18000,
+                count: 3
+
+            },
+            {
+                id: '2',
+                name: 'Фотокамера Nikon',
+                price: 25000,
+                count: 4
+
+            },
+            {
+                id: '3',
+                name: 'Apple ipad',
+                price: 35000,
+                count: 1
+
+            }
+        ]
+
+        function countBasketPrice(mas) {
+            var sumsubmit = 0;
+            for (var item of mas) {
+                sumsubmit += (item.price * item.count)
+            }
+            return sumsubmit
+        }
+
+        console.log(countBasketPrice(submit))
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
